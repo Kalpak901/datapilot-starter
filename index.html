@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Data Pilot | Starter Plan ($199/mo) - Business Overview</title>
+    <meta name="description" content="DataPilot Starter — Daily dashboard + weekly insights for small shops and freelancers. Automated, actionable weekly & monthly AI insights for Shopify stores & agencies." />
+    <!-- Tailwind CDN --><script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Light Theme Variables */
+        :root{
+            --accent1: #06b6d4; /* Cyan-500 */
+            --accent2: #08b0a8; /* Slightly greener Cyan */
+            --bg-1: #f4f7f9; /* Off-white / Light Blue Gray */
+            --bg-2: #ffffff; /* White background */
+            --text-primary: #1f2937; /* Dark Gray for main text */
+            --text-muted: #6b7280; /* Medium Gray for secondary text */
+        }
+        html, body { height: 100%; }
+        body {
+            margin: 0;
+            /* Gradient for subtle depth on a light theme */
+            background: linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%);
+            color: var(--text-primary);
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1.6;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Removed heavy glow, focusing on clean shadows for professionalism */
+        .glass {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid #e5e7eb;
+            backdrop-filter: blur(8px);
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Clean, subtle shadow */
+        }
+        .btn-cta {
+            background: linear-gradient(90deg, var(--accent1), var(--accent2));
+            color: #1f2937; /* Dark text on bright button */
+            font-weight: 800;
+            padding: 14px 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(6, 182, 212, 0.4);
+            transition: all .3s ease;
+            text-decoration: none;
+        }
+        .btn-cta:hover {
+            box-shadow: 0 6px 20px rgba(6, 182, 212, 0.6);
+            transform: translateY(-2px);
+        }
+        .card {
+            background: #ffffff; /* Pure white cards */
+            border-radius: 16px;
+            padding: 28px;
+            border: 1px solid #e5e7eb;
+            transition: all .3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        .card:hover {
+            border-color: rgba(6, 182, 212, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .kpi-item {
+            background: #f3f4f6; /* Light gray background */
+            padding: 12px 16px;
+            border-radius: 10px;
+            color: var(--text-primary);
+            font-weight: 600;
+            border-left: 3px solid var(--accent1);
+        }
+        .text-muted {
+            color: var(--text-muted);
+        }
+        
+        /* Specific styles for the embedded SVG logo (Adjusted for Light Background) */
+        .header-logo-svg {
+            width: 44px;
+            height: 44px;
+            display: block;
+        }
+        .header-logo-svg .plane-fill {
+            fill: #1f2937; /* Dark fill for contrast */
+        }
+        .header-logo-svg .globe-outline {
+            stroke: #1f2937; /* Dark stroke for globe lines */
+            stroke-width: 0.5;
+        }
+        .header-logo-svg .globe-base {
+            fill: #3498db;
+            opacity: 0.8; 
+        }
+    </style>
+</head>
+<body>
+
+<div class="max-w-4xl mx-auto px-6 py-8">
+    
+    <!-- Header -->
+    <header class="flex items-center justify-between pb-8 border-b border-gray-200">
+        <div class="flex items-center gap-4">
+            <!-- EMBEDDED SVG LOGO (Colors adjusted for light theme) -->
+            <svg class="header-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#08b0a8;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <!-- Simplified Globe and Plane from the uploaded image concept -->
+                <circle cx="50" cy="50" r="40" fill="url(#logoGradient)"/>
+                <path class="globe-outline" d="M50,10 A40,40 0 0,1 50,90 M50,10 A40,40 0 0,0 50,90 M10,50 L90,50 M30,15 Q35,50 30,85 M70,15 Q65,50 70,85" stroke="#1f2937" stroke-width="1" fill="none"/>
+                <!-- Plane silhouette (filled with dark background color for contrast) -->
+                <path d="M 60 40 L 75 35 L 85 45 L 60 55 Z M 40 45 L 50 35 L 60 40 L 40 55 Z" fill="#1f2937"/> 
+            </svg>
+
+            <div>
+                <div class="text-2xl font-bold">Data Pilot</div>
+                <div class="text-sm font-medium" style="color:var(--accent1)">**Starter Plan** - Business Overview</div>
+            </div>
+        </div>
+        <nav>
+            <a class="btn-cta text-sm" href="#buy" id="subscribe-header" style="text-decoration:none">
+                Get Started
+            </a>
+        </nav>
+    </header>
+
+    <main class="mt-12">
+        
+        <!-- Hero / Pricing Summary -->
+        <section class="glass p-8 md:p-10 mb-12 border-2 border-cyan-500/50 shadow-lg">
+            <div class="grid md:grid-cols-3 gap-8 items-center">
+                <!-- Left: Plan Details -->
+                <div class="md:col-span-2">
+                    <h1 class="text-3xl md:text-4xl font-extrabold leading-tight">Starter Pilot: Essential Insights for Growth</h1>
+                    <p class="text-lg mt-3 text-muted max-w-xl">Designed for growing e-commerce stores and independent freelancers. Access a live dashboard and receive prioritized weekly actions powered by autonomous AI analysis.</p>
+
+                    <ul class="mt-6 space-y-3 text-sm list-none p-0">
+                        <li class="flex items-center gap-2 font-semibold"><span class="text-cyan-600 font-bold text-xl">✓</span> Daily Dashboard & KPI Tracking (1 Data Source)</li>
+                        <li class="flex items-center gap-2 font-semibold"><span class="text-cyan-600 font-bold text-xl">✓</span> Weekly Executive Action Plan (3 Priorities)</li>
+                        <li class="flex items-center gap-2 font-semibold"><span class="text-cyan-600 font-bold text-xl">✓</span> Direct Email Support Channel</li>
+                    </ul>
+                </div>
+                
+                <!-- Right: CTA Card -->
+                <div class="md:col-span-1 card border-2 border-cyan-500/30 p-6 self-start shadow-xl" id="buy">
+                    <div class="text-base font-semibold text-cyan-600 tracking-wider uppercase">Your Investment</div>
+                    <div class="text-5xl font-extrabold mt-2">$199 <span class="text-xl font-normal text-muted">/mo</span></div>
+                    <div class="text-sm text-muted mt-1">No annual contract. Cancel anytime.</div>
+
+                    <div class="mt-6">
+                        <!-- Replace the data-payment-link value with the Stripe Payment Link for Starter -->
+                        <button id="subscribe-starter" data-payment-link="PASTE_STRIPE_LINK_FOR_STARTER" class="btn-cta w-full text-lg transition duration-300">
+                            Secure Checkout
+                        </button>
+                    </div>
+                    <div class="text-center text-xs text-muted mt-4">14-Day Money-Back Guarantee.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image and Video Placeholders -->
+        <section class="mb-12 grid md:grid-cols-2 gap-8">
+            <!-- Image Placeholder -->
+            <div class="card p-6 border-l-4 border-l-cyan-500">
+                <h3 class="text-xl font-semibold mb-3">Product Dashboard Screenshot</h3>
+                <p class="text-muted text-sm mb-4">A high-fidelity visual of the Data Pilot interface, showing live KPIs and trend analysis.</p>
+                <div class="w-full h-48 bg-gray-100 border border-dashed border-gray-300 rounded-lg flex items-center justify-center text-muted">
+                    Dashboard Screenshot **(Image Placeholder)**
+                </div>
+            </div>
+
+            <!-- Video Placeholder -->
+            <div class="card p-6 border-l-4 border-l-cyan-500">
+                <h3 class="text-xl font-semibold mb-3">5-Minute Platform Walkthrough</h3>
+                <p class="text-muted text-sm mb-4">See exactly how to connect your data source and where to find your first report.</p>
+                <div class="w-full h-48 bg-gray-100 border border-dashed border-gray-300 rounded-lg flex items-center justify-center text-muted">
+                    Product Demo Video **(Video/iFrame Placeholder)**
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Feature Breakdown -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6">Platform Capabilities: Starter Access</h2>
+            
+            <!-- Dashboard Card -->
+            <div class="card mb-8">
+                <h3 class="text-xl font-semibold border-b border-gray-200 pb-2">Real-Time Daily Performance Dashboard</h3>
+                <p class="text-muted mt-3">A streamlined, single-view dashboard automatically updated every 24 hours, giving you immediate visibility into core e-commerce metrics.</p>
+                <div class="flex flex-wrap gap-4 mt-4">
+                    <div class="kpi-item">Sales & Revenue Tracking</div>
+                    <div class="kpi-item">Order Volume & Fulfillment Rate</div>
+                    <div class="kpi-item">Average Order Value (AOV)</div>
+                    <div class="kpi-item">Conversion Rate (CR)</div>
+                </div>
+            </div>
+            
+            <!-- Insights Card -->
+            <div class="card mb-8">
+                <h3 class="text-xl font-semibold border-b border-gray-200 pb-2">Weekly Priority Action Plan</h3>
+                <p class="text-muted mt-3">Receive a concise, executive-ready email that cuts through the noise. Our AI identifies **three high-impact actions** designed for immediate profit improvement.</p>
+                <ul class="text-muted mt-4 space-y-1 list-disc list-inside">
+                    <li>Summary of anomalies and significant trends.</li>
+                    <li>3 prioritized actions for the week (e.g., product to scale, ad set to pause).</li>
+                    <li>Simple data visualizations to support findings.</li>
+                </ul>
+            </div>
+
+            <!-- Dedicated Customer Support Section (NEW) -->
+            <div class="card mb-8">
+                <h3 class="text-xl font-semibold border-b border-gray-200 pb-2">Dedicated Customer Support</h3>
+                <p class="text-muted mt-3">The Starter Plan includes reliable support to ensure your insights are always running smoothly and you understand your data.</p>
+                <ul class="text-muted mt-4 space-y-1 list-disc list-inside">
+                    <li>**Direct Email Support:** Reach our technical team 24/7 for data connection issues or report questions.</li>
+                    <li>**Setup & Onboarding Assistance:** Get personalized help connecting your first data source correctly.</li>
+                    <li>**FAQ & Knowledge Base Access:** Access a comprehensive library of best practices and detailed platform guides.</li>
+                </ul>
+            </div>
+
+            <!-- Onboarding Card -->
+            <div class="card">
+                <h3 class="text-xl font-semibold border-b border-gray-200 pb-2">Seamless Onboarding Process</h3>
+                <p class="text-muted mt-3">Get up and running in minutes. The entire setup is automated upon subscription.</p>
+                <ol class="text-muted mt-4 space-y-3 list-decimal list-inside text-sm">
+                    <li>**Instant Subscription:** Complete checkout via the secure Stripe link.</li>
+                    <li>**Automated Setup:** Our n8n workflow instantly provisions your dedicated data folder and access link.</li>
+                    <li>**Data Connection:** Follow the simple instructions emailed to connect your Shopify/Google Sheet export (read-only access).</li>
+                    <li>**First Report:** Your first full weekly insight email will arrive within 7 days of successful data sync.</li>
+                </ol>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer class="text-sm pt-8 border-t border-gray-200">
+        <div class="text-center">
+            <div class="text-muted">Contact Sales: <a href="mailto:chris@datapilot.in.inet" class="text-cyan-600 hover:text-cyan-700 transition">chris@datapilot.in.inet</a></div>
+            <div class="mt-2 text-muted text-xs">© 2024 Data Pilot, LLC • <a href="/privacy.html" class="hover:text-cyan-600">Privacy Policy</a> • <a href="/terms.html" class="hover:text-cyan-600">Terms of Service</a></div>
+        </div>
+    </footer>
+</div>
+
+<script>
+    // Use custom alerts instead of default alert() since it's restricted in the environment
+    const customAlert = (message) => {
+        const container = document.createElement('div');
+        container.className = 'fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/60';
+        container.innerHTML = `
+            <div class="bg-white p-6 rounded-lg shadow-xl max-w-sm w-full text-gray-900">
+                <h3 class="font-bold text-lg mb-2">Notice</h3>
+                <p>${message}</p>
+                <button class="mt-4 px-4 py-2 bg-cyan-600 text-white rounded-lg hover:bg-cyan-700" onclick="this.closest('.fixed').remove()">
+                    Close
+                </button>
+            </div>
+        `;
+        document.body.appendChild(container);
+    };
+
+    // Replace default alert() usage in the script (which was inside the original file)
+    window.alert = customAlert; 
+
+    // open stripe payment link
+    const subscribeHandler = (event) => {
+        const button = event.currentTarget;
+        const link = button.getAttribute('data-payment-link');
+        
+        if(!link || link.includes('PASTE')) { 
+            customAlert('Configuration Error: Please replace the data-payment-link attribute with your Stripe Payment Link for the Starter Plan.'); 
+            return; 
+        }
+        
+        // In a real browser environment, this would open a new tab/window
+        console.log('Redirecting to Stripe payment link:', link);
+        // Since we cannot open external links, we simulate the action with the custom alert
+        customAlert('Redirecting to the secure Stripe Checkout page... (Link copied to console in this preview environment)');
+    };
+
+    document.getElementById('subscribe-starter').addEventListener('click', subscribeHandler);
+    document.getElementById('subscribe-header').addEventListener('click', (e) => {
+        e.preventDefault();
+        // Smooth scroll to the CTA section
+        document.getElementById('buy').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+</body>
+</html>
